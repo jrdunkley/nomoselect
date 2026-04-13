@@ -1,0 +1,1442 @@
+[
+  {
+    "name": "Iris (4d, 3 class)",
+    "n": 150,
+    "p": 4,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9867,
+            "acc_pca": 0.9467,
+            "acc_delta": 0.04,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9667,
+            "acc_pca": 0.88,
+            "acc_delta": 0.0867,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9867,
+            "acc_pca": 0.9467,
+            "acc_delta": 0.04,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9667,
+            "acc_pca": 0.88,
+            "acc_delta": 0.0867,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Wine (13d, 3 class)",
+    "n": 178,
+    "p": 13,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9381,
+            "acc_pca": 0.7981,
+            "acc_delta": 0.14,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9944,
+            "acc_pca": 0.9554,
+            "acc_delta": 0.039,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9438,
+            "acc_pca": 0.7981,
+            "acc_delta": 0.1457,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9944,
+            "acc_pca": 0.9554,
+            "acc_delta": 0.039,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Breast Cancer (30d, 2 class)",
+    "n": 569,
+    "p": 30,
+    "k": 2,
+    "max_rank": 1,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9649,
+            "acc_pca": 0.877,
+            "acc_delta": 0.0878,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": false,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9649,
+            "acc_pca": 0.877,
+            "acc_delta": 0.0878,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": false,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Digits (64d, 10 class)",
+    "n": 1797,
+    "p": 64,
+    "k": 10,
+    "max_rank": 9,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.3845,
+            "acc_pca": 0.3139,
+            "acc_delta": 0.0707,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.6455,
+            "acc_pca": 0.5231,
+            "acc_delta": 0.1224,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8297,
+            "acc_pca": 0.7212,
+            "acc_delta": 0.1085,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "4": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8998,
+            "acc_pca": 0.8219,
+            "acc_delta": 0.0779,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "5": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9365,
+            "acc_pca": 0.8581,
+            "acc_delta": 0.0784,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "6": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9516,
+            "acc_pca": 0.8692,
+            "acc_delta": 0.0823,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "7": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9571,
+            "acc_pca": 0.916,
+            "acc_delta": 0.0412,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "8": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.97,
+            "acc_pca": 0.9271,
+            "acc_delta": 0.0429,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "9": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.975,
+            "acc_pca": 0.9299,
+            "acc_delta": 0.0451,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": false,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.3773,
+            "acc_pca": 0.3139,
+            "acc_delta": 0.0634,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.6461,
+            "acc_pca": 0.5231,
+            "acc_delta": 0.123,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8325,
+            "acc_pca": 0.7212,
+            "acc_delta": 0.1113,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "4": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9009,
+            "acc_pca": 0.8219,
+            "acc_delta": 0.079,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "5": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.936,
+            "acc_pca": 0.8581,
+            "acc_delta": 0.0779,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "6": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9538,
+            "acc_pca": 0.8692,
+            "acc_delta": 0.0846,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "7": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9594,
+            "acc_pca": 0.916,
+            "acc_delta": 0.0434,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "8": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9694,
+            "acc_pca": 0.9271,
+            "acc_delta": 0.0423,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "9": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.975,
+            "acc_pca": 0.9299,
+            "acc_delta": 0.0451,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": false,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: clean 3-class (10d)",
+    "n": 200,
+    "p": 10,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.765,
+            "acc_pca": 0.7,
+            "acc_delta": 0.065,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.995,
+            "acc_pca": 0.85,
+            "acc_delta": 0.145,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.755,
+            "acc_pca": 0.7,
+            "acc_delta": 0.055,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.995,
+            "acc_pca": 0.85,
+            "acc_delta": 0.145,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: low-sep 3-class (10d)",
+    "n": 200,
+    "p": 10,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.53,
+            "acc_pca": 0.375,
+            "acc_delta": 0.155,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.63,
+            "acc_pca": 0.49,
+            "acc_delta": 0.14,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.535,
+            "acc_pca": 0.375,
+            "acc_delta": 0.16,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.63,
+            "acc_pca": 0.49,
+            "acc_delta": 0.14,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: 5-class (10d)",
+    "n": 200,
+    "p": 10,
+    "k": 5,
+    "max_rank": 4,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.415,
+            "acc_pca": 0.3,
+            "acc_delta": 0.115,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.55,
+            "acc_pca": 0.485,
+            "acc_delta": 0.065,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.685,
+            "acc_pca": 0.62,
+            "acc_delta": 0.065,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "4": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.825,
+            "acc_pca": 0.57,
+            "acc_delta": 0.255,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.415,
+            "acc_pca": 0.3,
+            "acc_delta": 0.115,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.55,
+            "acc_pca": 0.485,
+            "acc_delta": 0.065,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.685,
+            "acc_pca": 0.62,
+            "acc_delta": 0.065,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "4": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.825,
+            "acc_pca": 0.57,
+            "acc_delta": 0.255,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: noisy 3-class (50d)",
+    "n": 200,
+    "p": 50,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.69,
+            "acc_pca": 0.615,
+            "acc_delta": 0.075,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9,
+            "acc_pca": 0.765,
+            "acc_delta": 0.135,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.695,
+            "acc_pca": 0.615,
+            "acc_delta": 0.08,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9,
+            "acc_pca": 0.765,
+            "acc_delta": 0.135,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: few-informative (50d)",
+    "n": 200,
+    "p": 50,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.735,
+            "acc_pca": 0.565,
+            "acc_delta": 0.17,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.955,
+            "acc_pca": 0.84,
+            "acc_delta": 0.115,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.72,
+            "acc_pca": 0.565,
+            "acc_delta": 0.155,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.955,
+            "acc_pca": 0.84,
+            "acc_delta": 0.115,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: moderate p (100d, 4 class)",
+    "n": 300,
+    "p": 100,
+    "k": 4,
+    "max_rank": 3,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.4667,
+            "acc_pca": 0.4133,
+            "acc_delta": 0.0533,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.7833,
+            "acc_pca": 0.4733,
+            "acc_delta": 0.31,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9033,
+            "acc_pca": 0.5533,
+            "acc_delta": 0.35,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.4667,
+            "acc_pca": 0.4133,
+            "acc_delta": 0.0533,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.7833,
+            "acc_pca": 0.4733,
+            "acc_delta": 0.31,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9033,
+            "acc_pca": 0.5533,
+            "acc_delta": 0.35,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: p>n (200d, 3 class, n=100)",
+    "n": 100,
+    "p": 200,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.74,
+            "acc_pca": 0.49,
+            "acc_delta": 0.25,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.86,
+            "acc_pca": 0.61,
+            "acc_delta": 0.25,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": false,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.74,
+            "acc_pca": 0.49,
+            "acc_delta": 0.25,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.86,
+            "acc_pca": 0.61,
+            "acc_delta": 0.25,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": false,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: high-p (500d, n=60)",
+    "n": 60,
+    "p": 500,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.3833,
+            "acc_pca": 0.6667,
+            "acc_delta": -0.2833,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.5167,
+            "acc_pca": 0.75,
+            "acc_delta": -0.2333,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.3833,
+            "acc_pca": 0.6667,
+            "acc_delta": -0.2833,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.5167,
+            "acc_pca": 0.75,
+            "acc_delta": -0.2333,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: binary easy (20d)",
+    "n": 200,
+    "p": 20,
+    "k": 2,
+    "max_rank": 1,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 1.0,
+            "acc_pca": 0.99,
+            "acc_delta": 0.01,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 1.0,
+            "acc_pca": 0.99,
+            "acc_delta": 0.01,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: binary hard + noise (20d)",
+    "n": 200,
+    "p": 20,
+    "k": 2,
+    "max_rank": 1,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.695,
+            "acc_pca": 0.61,
+            "acc_delta": 0.085,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.695,
+            "acc_pca": 0.61,
+            "acc_delta": 0.085,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: imbalanced 3-class",
+    "n": 300,
+    "p": 10,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.77,
+            "acc_pca": 0.7667,
+            "acc_delta": 0.0033,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8467,
+            "acc_pca": 0.8233,
+            "acc_delta": 0.0233,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.7233,
+            "acc_pca": 0.7667,
+            "acc_delta": -0.0433,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8467,
+            "acc_pca": 0.8233,
+            "acc_delta": 0.0233,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: heavily imbalanced 4-class",
+    "n": 300,
+    "p": 10,
+    "k": 4,
+    "max_rank": 3,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.7367,
+            "acc_pca": 0.44,
+            "acc_delta": 0.2967,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8433,
+            "acc_pca": 0.7467,
+            "acc_delta": 0.0967,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9233,
+            "acc_pca": 0.8333,
+            "acc_delta": 0.09,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.7867,
+            "acc_pca": 0.44,
+            "acc_delta": 0.3467,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8533,
+            "acc_pca": 0.7467,
+            "acc_delta": 0.1067,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.9233,
+            "acc_pca": 0.8333,
+            "acc_delta": 0.09,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: 6-class moderate (30d)",
+    "n": 500,
+    "p": 30,
+    "k": 6,
+    "max_rank": 5,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.276,
+            "acc_pca": 0.178,
+            "acc_delta": 0.098,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.43,
+            "acc_pca": 0.254,
+            "acc_delta": 0.176,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.476,
+            "acc_pca": 0.324,
+            "acc_delta": 0.152,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "4": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.552,
+            "acc_pca": 0.41,
+            "acc_delta": 0.142,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "5": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.568,
+            "acc_pca": 0.466,
+            "acc_delta": 0.102,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.29,
+            "acc_pca": 0.178,
+            "acc_delta": 0.112,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.428,
+            "acc_pca": 0.254,
+            "acc_delta": 0.174,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "3": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.476,
+            "acc_pca": 0.324,
+            "acc_delta": 0.152,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "4": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.552,
+            "acc_pca": 0.41,
+            "acc_delta": 0.142,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "5": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.568,
+            "acc_pca": 0.466,
+            "acc_delta": 0.102,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: all-informative (10d, 3 class)",
+    "n": 200,
+    "p": 10,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.785,
+            "acc_pca": 0.685,
+            "acc_delta": 0.1,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.99,
+            "acc_pca": 0.875,
+            "acc_delta": 0.115,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.79,
+            "acc_pca": 0.685,
+            "acc_delta": 0.105,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.99,
+            "acc_pca": 0.875,
+            "acc_delta": 0.115,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: label noise 5% (40d)",
+    "n": 150,
+    "p": 40,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.6333,
+            "acc_pca": 0.3933,
+            "acc_delta": 0.24,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8267,
+            "acc_pca": 0.5667,
+            "acc_delta": 0.26,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.64,
+            "acc_pca": 0.3933,
+            "acc_delta": 0.2467,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.8267,
+            "acc_pca": 0.5667,
+            "acc_delta": 0.26,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  },
+  {
+    "name": "Synth: label noise 15% (40d)",
+    "n": 150,
+    "p": 40,
+    "k": 3,
+    "max_rank": 2,
+    "tasks": {
+      "fisher": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.5533,
+            "acc_pca": 0.4933,
+            "acc_delta": 0.06,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.7,
+            "acc_pca": 0.5667,
+            "acc_delta": 0.1333,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      },
+      "equal_weight": {
+        "ranks": {
+          "1": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.62,
+            "acc_pca": 0.4933,
+            "acc_delta": 0.1267,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          },
+          "2": {
+            "pct_retained": 100.0,
+            "eta": 0.0,
+            "acc_geo": 0.7,
+            "acc_pca": 0.5667,
+            "acc_delta": 0.1333,
+            "geo_dominates": true,
+            "pca_dominates": false,
+            "method": "commuting_exact"
+          }
+        },
+        "stable": true,
+        "recommended_rank": 1
+      }
+    }
+  }
+]

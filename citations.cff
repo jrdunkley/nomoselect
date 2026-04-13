@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this workspace, please cite the software."
+title: "nomoselect"
+version: "0.15"
+date-released: 2026-04-13
+license: "BSD-3-Clause"
+authors:
+  - family-names: "Dunkley"
+    given-names: "J. R."
+references:
+  - type: generic
+    title: "nomoselect"
+    doi: doi.org/10.5281/zenodo.19554448

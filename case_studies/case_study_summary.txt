@@ -1,0 +1,194 @@
+nomoselect v0.1.0 — Case Study Results
+============================================================
+
+Iris (4d, 3 class)  (n=150, p=4, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.987  PCA=0.947  delta=+0.040 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.967  PCA=0.880  delta=+0.087 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.987  PCA=0.947  delta=+0.040 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.967  PCA=0.880  delta=+0.087 [GEO dominates]
+
+Wine (13d, 3 class)  (n=178, p=13, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.938  PCA=0.798  delta=+0.140 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.994  PCA=0.955  delta=+0.039 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.944  PCA=0.798  delta=+0.146 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.994  PCA=0.955  delta=+0.039 [GEO dominates]
+
+Breast Cancer (30d, 2 class)  (n=569, p=30, k=2)
+  task=fisher  stable=False  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.965  PCA=0.877  delta=+0.088 [GEO dominates]
+  task=equal_weight  stable=False  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.965  PCA=0.877  delta=+0.088 [GEO dominates]
+
+Digits (64d, 10 class)  (n=1797, p=64, k=10)
+  task=fisher  stable=False  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.385  PCA=0.314  delta=+0.071 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.645  PCA=0.523  delta=+0.122 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.830  PCA=0.721  delta=+0.108 [GEO dominates]
+    rank 4: retained=100.0%  GEO=0.900  PCA=0.822  delta=+0.078 [GEO dominates]
+    rank 5: retained=100.0%  GEO=0.936  PCA=0.858  delta=+0.078 [GEO dominates]
+    rank 6: retained=100.0%  GEO=0.952  PCA=0.869  delta=+0.082 [GEO dominates]
+    rank 7: retained=100.0%  GEO=0.957  PCA=0.916  delta=+0.041 [GEO dominates]
+    rank 8: retained=100.0%  GEO=0.970  PCA=0.927  delta=+0.043 [GEO dominates]
+    rank 9: retained=100.0%  GEO=0.975  PCA=0.930  delta=+0.045 [GEO dominates]
+  task=equal_weight  stable=False  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.377  PCA=0.314  delta=+0.063 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.646  PCA=0.523  delta=+0.123 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.833  PCA=0.721  delta=+0.111 [GEO dominates]
+    rank 4: retained=100.0%  GEO=0.901  PCA=0.822  delta=+0.079 [GEO dominates]
+    rank 5: retained=100.0%  GEO=0.936  PCA=0.858  delta=+0.078 [GEO dominates]
+    rank 6: retained=100.0%  GEO=0.954  PCA=0.869  delta=+0.085 [GEO dominates]
+    rank 7: retained=100.0%  GEO=0.959  PCA=0.916  delta=+0.043 [GEO dominates]
+    rank 8: retained=100.0%  GEO=0.969  PCA=0.927  delta=+0.042 [GEO dominates]
+    rank 9: retained=100.0%  GEO=0.975  PCA=0.930  delta=+0.045 [GEO dominates]
+
+Synth: clean 3-class (10d)  (n=200, p=10, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.765  PCA=0.700  delta=+0.065 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.995  PCA=0.850  delta=+0.145 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.755  PCA=0.700  delta=+0.055 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.995  PCA=0.850  delta=+0.145 [GEO dominates]
+
+Synth: low-sep 3-class (10d)  (n=200, p=10, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.530  PCA=0.375  delta=+0.155 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.630  PCA=0.490  delta=+0.140 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.535  PCA=0.375  delta=+0.160 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.630  PCA=0.490  delta=+0.140 [GEO dominates]
+
+Synth: 5-class (10d)  (n=200, p=10, k=5)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.415  PCA=0.300  delta=+0.115 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.550  PCA=0.485  delta=+0.065 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.685  PCA=0.620  delta=+0.065 [GEO dominates]
+    rank 4: retained=100.0%  GEO=0.825  PCA=0.570  delta=+0.255 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.415  PCA=0.300  delta=+0.115 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.550  PCA=0.485  delta=+0.065 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.685  PCA=0.620  delta=+0.065 [GEO dominates]
+    rank 4: retained=100.0%  GEO=0.825  PCA=0.570  delta=+0.255 [GEO dominates]
+
+Synth: noisy 3-class (50d)  (n=200, p=50, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.690  PCA=0.615  delta=+0.075 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.900  PCA=0.765  delta=+0.135 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.695  PCA=0.615  delta=+0.080 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.900  PCA=0.765  delta=+0.135 [GEO dominates]
+
+Synth: few-informative (50d)  (n=200, p=50, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.735  PCA=0.565  delta=+0.170 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.955  PCA=0.840  delta=+0.115 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.720  PCA=0.565  delta=+0.155 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.955  PCA=0.840  delta=+0.115 [GEO dominates]
+
+Synth: moderate p (100d, 4 class)  (n=300, p=100, k=4)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.467  PCA=0.413  delta=+0.053 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.783  PCA=0.473  delta=+0.310 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.903  PCA=0.553  delta=+0.350 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.467  PCA=0.413  delta=+0.053 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.783  PCA=0.473  delta=+0.310 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.903  PCA=0.553  delta=+0.350 [GEO dominates]
+
+Synth: p>n (200d, 3 class, n=100)  (n=100, p=200, k=3)
+  task=fisher  stable=False  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.740  PCA=0.490  delta=+0.250 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.860  PCA=0.610  delta=+0.250 [GEO dominates]
+  task=equal_weight  stable=False  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.740  PCA=0.490  delta=+0.250 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.860  PCA=0.610  delta=+0.250 [GEO dominates]
+
+Synth: high-p (500d, n=60)  (n=60, p=500, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.383  PCA=0.667  delta=-0.283 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.517  PCA=0.750  delta=-0.233 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.383  PCA=0.667  delta=-0.283 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.517  PCA=0.750  delta=-0.233 [GEO dominates]
+
+Synth: binary easy (20d)  (n=200, p=20, k=2)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=1.000  PCA=0.990  delta=+0.010 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=1.000  PCA=0.990  delta=+0.010 [GEO dominates]
+
+Synth: binary hard + noise (20d)  (n=200, p=20, k=2)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.695  PCA=0.610  delta=+0.085 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.695  PCA=0.610  delta=+0.085 [GEO dominates]
+
+Synth: imbalanced 3-class  (n=300, p=10, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.770  PCA=0.767  delta=+0.003 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.847  PCA=0.823  delta=+0.023 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.723  PCA=0.767  delta=-0.043 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.847  PCA=0.823  delta=+0.023 [GEO dominates]
+
+Synth: heavily imbalanced 4-class  (n=300, p=10, k=4)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.737  PCA=0.440  delta=+0.297 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.843  PCA=0.747  delta=+0.097 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.923  PCA=0.833  delta=+0.090 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.787  PCA=0.440  delta=+0.347 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.853  PCA=0.747  delta=+0.107 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.923  PCA=0.833  delta=+0.090 [GEO dominates]
+
+Synth: 6-class moderate (30d)  (n=500, p=30, k=6)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.276  PCA=0.178  delta=+0.098 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.430  PCA=0.254  delta=+0.176 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.476  PCA=0.324  delta=+0.152 [GEO dominates]
+    rank 4: retained=100.0%  GEO=0.552  PCA=0.410  delta=+0.142 [GEO dominates]
+    rank 5: retained=100.0%  GEO=0.568  PCA=0.466  delta=+0.102 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.290  PCA=0.178  delta=+0.112 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.428  PCA=0.254  delta=+0.174 [GEO dominates]
+    rank 3: retained=100.0%  GEO=0.476  PCA=0.324  delta=+0.152 [GEO dominates]
+    rank 4: retained=100.0%  GEO=0.552  PCA=0.410  delta=+0.142 [GEO dominates]
+    rank 5: retained=100.0%  GEO=0.568  PCA=0.466  delta=+0.102 [GEO dominates]
+
+Synth: all-informative (10d, 3 class)  (n=200, p=10, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.785  PCA=0.685  delta=+0.100 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.990  PCA=0.875  delta=+0.115 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.790  PCA=0.685  delta=+0.105 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.990  PCA=0.875  delta=+0.115 [GEO dominates]
+
+Synth: label noise 5% (40d)  (n=150, p=40, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.633  PCA=0.393  delta=+0.240 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.827  PCA=0.567  delta=+0.260 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.640  PCA=0.393  delta=+0.247 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.827  PCA=0.567  delta=+0.260 [GEO dominates]
+
+Synth: label noise 15% (40d)  (n=150, p=40, k=3)
+  task=fisher  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.553  PCA=0.493  delta=+0.060 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.700  PCA=0.567  delta=+0.133 [GEO dominates]
+  task=equal_weight  stable=True  rec_rank=1
+    rank 1: retained=100.0%  GEO=0.620  PCA=0.493  delta=+0.127 [GEO dominates]
+    rank 2: retained=100.0%  GEO=0.700  PCA=0.567  delta=+0.133 [GEO dominates]
+
+------------------------------------------------------------
+Dominance summary across all rank/task combinations:
+  GEO dominates: 102/102
+  PCA dominates: 0/102
+  Neither:       0/102
+
+Note: dominance is an exact certificate on task-curvature,
+not a claim about predictive accuracy.  Accuracy deltas
+depend on the classifier and the task declaration.
