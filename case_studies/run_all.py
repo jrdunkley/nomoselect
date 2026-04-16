@@ -1,5 +1,5 @@
 """
-Automated case-study runner for nomoselect v0.1.0.
+Automated case-study runner for nomoselect v0.2.0.
 
 Runs GeometricSubspaceSelector across 20 classification scenarios,
 compares against PCA at each rank, and collects structured results.
@@ -226,7 +226,7 @@ def main():
     # Generate summary
     summary_path = os.path.join(out_dir, "case_study_summary.txt")
     with open(summary_path, "w") as f:
-        f.write("nomoselect v0.1.0 — Case Study Results\n")
+        f.write("nomoselect v0.2.0 — Case Study Results\n")
         f.write("=" * 60 + "\n\n")
 
         geo_wins = 0

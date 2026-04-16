@@ -14,7 +14,11 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 import numpy as np
-import nomogeo
+import nomogeo  # 0.3.2 API: declared_ladder_dimension_cost_intervals (frontier.py)
+# ── nomogeo 0.3.3 update safety note ──
+# This module uses only frontier.py's declared_ladder_dimension_cost_intervals.
+# The 0.3.3 update does NOT alter frontier.py signatures.
+# No changes needed here for the 0.3.3 upgrade.
 
 from .selector import GeometricSubspaceSelector
 

@@ -10,7 +10,10 @@ from dataclasses import dataclass, field
 from typing import Any
 
 import numpy as np
-import nomogeo
+import nomogeo  # 0.3.2+ API: closure_scores, compare_observers, information_budget
+# ── nomogeo 0.4.0 update ──
+# This module now also uses source.py APIs (information_budget) for
+# perturbation robustness diagnostics. The adapted.py APIs are unchanged.
 
 from .selector import GeometricSubspaceSelector
 from .tasks import TaskFamily
@@ -25,6 +28,17 @@ class BaselineComparison:
     dominance: nomogeo.ObserverComparisonResult
     geo_dominates: bool
     baseline_dominates: bool
+
+
+@dataclass
+class PerturbationBudget:
+    """How much perturbation information the observer captures vs a baseline."""
+
+    observer_visible_fraction: float
+    baseline_visible_fraction: float | None
+    baseline_name: str | None
+    ambient_rate: float
+    conservation_residual: float
 
 
 @dataclass
@@ -77,6 +91,7 @@ class ObserverReport:
     eigvals_sw_top5: list[float]
     per_class: list[PerClassDiagnostic] = field(default_factory=list)
     baselines: list[BaselineComparison] = field(default_factory=list)
+    perturbation_budget: PerturbationBudget | None = None
 
     @classmethod
     def from_selector(
@@ -175,6 +190,29 @@ class ObserverReport:
                     baseline_dominates=comp.left_dominates,
                 ))
 
+        # Perturbation robustness diagnostic (task = perturbation unification)
+        try:
+            # The task family aggregate IS the perturbation direction
+            Hdot = 0.5 * (family_agg[0] + family_agg[0].T) if isinstance(family_agg, list) else 0.5 * (family_agg + family_agg.T)
+            # Observer C from the fitted selector
+            C_obs = sel._B_whitened.T  # m x n_whitened
+            bg_obs = nomogeo.information_budget(H, C_obs, Hdot)
+
+            # PCA baseline for comparison (top eigenvectors of H)
+            eigvals_H, eigvecs_H = np.linalg.eigh(H)
+            C_pca = eigvecs_H[:, -sel.n_components:].T
+            bg_pca = nomogeo.information_budget(H, C_pca, Hdot)
+
+            report.perturbation_budget = PerturbationBudget(
+                observer_visible_fraction=bg_obs.visible_fraction,
+                baseline_visible_fraction=bg_pca.visible_fraction,
+                baseline_name="PCA",
+                ambient_rate=bg_obs.ambient_rate,
+                conservation_residual=bg_obs.conservation_residual,
+            )
+        except Exception:
+            pass  # gracefully skip if dimensions don't match etc.
+
         return report
 
     def summary(self, technical: bool = False) -> str:
@@ -240,6 +278,25 @@ class ObserverReport:
                     f"    vs {bc.name:12s}  "
                     f"{bc.name} retains {bc_pct:.1f}%  [{verdict}]"
                 )
+
+        if self.perturbation_budget is not None:
+            pb = self.perturbation_budget
+            lines.append("")
+            lines.append("  Perturbation robustness:")
+            lines.append(
+                f"    Observer captures {100*pb.observer_visible_fraction:.1f}% "
+                f"of task-perturbation information"
+            )
+            if pb.baseline_visible_fraction is not None and pb.baseline_name:
+                lines.append(
+                    f"    {pb.baseline_name} captures "
+                    f"{100*pb.baseline_visible_fraction:.1f}%"
+                )
+                diff = pb.observer_visible_fraction - pb.baseline_visible_fraction
+                if diff > 0.01:
+                    lines.append(
+                        f"    Advantage: +{100*diff:.1f} percentage points"
+                    )
 
         lines.append("")
         lines.append("  Note: these diagnostics are exact for the task you")

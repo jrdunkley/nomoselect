@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nomoselect"
-version = "0.1.0"
+version = "0.2.0"
 description = "Task-aware subspace selection with exact diagnostics. Built on nomogeo."
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
+license = "BSD-3-Clause"
 authors = [{name = "J. R. Dunkley"}]
 dependencies = [
-    "nomogeo>=0.3.2",
+    "nomogeo>=0.4.0",
     "numpy>=1.24",
     "scikit-learn>=1.2",
 ]

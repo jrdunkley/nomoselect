@@ -23,7 +23,11 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.utils.validation import check_is_fitted
 
-import nomogeo
+import nomogeo  # 0.3.2 API: closure_adapted_observer, closure_scores (adapted.py)
+# ── nomogeo 0.3.3 update safety note ──
+# This module uses only adapted.py APIs (closure_adapted_observer,
+# closure_scores). The 0.3.3 update does NOT alter adapted.py signatures.
+# No changes needed here for the 0.3.3 upgrade.
 
 from .tasks import (
     TaskFamily,

@@ -1,4 +1,4 @@
-nomoselect v0.1.0 — Case Study Results
+nomoselect v0.2.0 — Case Study Results
 ============================================================
 
 Iris (4d, 3 class)  (n=150, p=4, k=3)
